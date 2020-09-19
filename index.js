@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('Express server listening on port', port)
 });
